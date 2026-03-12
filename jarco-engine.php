@@ -15,6 +15,7 @@ if (!defined('ABSPATH')) {
 
 // Подключаем файл с Meta Box
 require_once plugin_dir_path(__FILE__) . 'jarco-engine-meta-boxes.php';
+require_once plugin_dir_path(__FILE__) . 'inc/plugin-update-config.php';
 
 class JarcoPlugin {
     public function __construct() {
