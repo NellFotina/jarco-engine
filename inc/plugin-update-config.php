@@ -23,5 +23,5 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 );
 
 // Авторизация
-$myUpdateChecker->setAuthentication('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');
+$myUpdateChecker->getVcsApi()->setAuthentication('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');
 $myUpdateChecker->setBranch('main');
