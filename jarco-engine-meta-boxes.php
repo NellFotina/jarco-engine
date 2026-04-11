@@ -166,7 +166,7 @@ class JarcoMetaBoxes {
     public static function add_homepage_meta_fields($meta_boxes) {
         $meta_boxes[] = [
             'title'      => 'Блок Intro',
-            'post_types' => ['page'], // можно добавить 'product', если нужно для товаров
+            'post_types' => ['page', 'product'],
             'fields'     => [
                 [
                     'name' => 'Заголовок H2 блока Intro',
