@@ -165,14 +165,17 @@ class JarcoMetaBoxes {
      */
     public static function add_homepage_meta_fields($meta_boxes) {
         $meta_boxes[] = [
-            'title'      => 'Блок Intro на главной',
-            'post_types' => ['page'],
-            'include'    => [
-                'ID' => 2,
-            ],
+            'title'      => 'Блок Intro',
+            'post_types' => ['page'], // можно добавить 'product', если нужно для товаров
             'fields'     => [
                 [
-                    'name' => 'Текст (правый блок)',
+                    'name' => 'Заголовок H2 блока Intro',
+                    'id'   => '_intro_custom_title',
+                    'type' => 'text',
+                    'desc' => 'Оставьте пустым, чтобы использовать заголовок страницы или таксономии',
+                ],
+                [
+                    'name' => 'Текст блока Intro',
                     'id'   => '_home_intro_text',
                     'type' => 'wysiwyg',
                 ],
