@@ -3,7 +3,7 @@
 Plugin Name: Jarco Engine
 Description: Управление продуктами Jarco с интеграцией WooCommerce (только вариативные товары)
 Author: Nelia Fotina
-Version: 1.6
+Version: 1.7
 Requires PHP: 7.4
 Text Domain: jarco-engine
 Domain Path: /languages

@@ -164,9 +164,10 @@ class JarcoMetaBoxes {
      * Мета-поля для главной страницы (через Meta Box)
      */
     public static function add_homepage_meta_fields($meta_boxes) {
+        // Метабокс для страниц (оставляем оба поля)
         $meta_boxes[] = [
             'title'      => 'Блок Intro',
-            'post_types' => ['page', 'product'],
+            'post_types' => ['page'],
             'fields'     => [
                 [
                     'name' => 'Заголовок H2 блока Intro',
@@ -181,6 +182,21 @@ class JarcoMetaBoxes {
                 ],
             ],
         ];
+
+        // Метабокс для товаров (только заголовок)
+        $meta_boxes[] = [
+            'title'      => 'Заголовок H2 для товара',
+            'post_types' => ['product'],
+            'fields'     => [
+                [
+                    'name' => 'Заголовок H2 (для блока intro или другого места)',
+                    'id'   => '_intro_custom_title',
+                    'type' => 'text',
+                    'desc' => 'Заполните, если хотите вывести отдельный H2 на странице товара (например, в блоке описания)',
+                ],
+            ],
+        ];
+
         return $meta_boxes;
     }
 
