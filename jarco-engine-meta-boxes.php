@@ -180,6 +180,15 @@ class JarcoMetaBoxes {
                     'id'   => '_home_intro_text',
                     'type' => 'wysiwyg',
                 ],
+                [
+                    'name'    => 'Краткое описание (над галереей товаров)',
+                    'id'      => '_home_short_description',
+                    'type'    => 'wysiwyg',          // или 'textarea' при желании
+                    'desc'    => 'Отображается под заголовком H1 и над сеткой товаров. Показывается только на главной странице.',
+                    'visible' => [                   // ← условие видимости
+                        'template' => 'page-home.php',
+                    ],
+                ],
             ],
         ];
 
